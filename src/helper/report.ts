@@ -8,10 +8,8 @@ report.generate({
   displayDuration: true,
   metadata: {
     browser: {
-      name: 'chrome',
-      version: '126.0.6478.127',
+      name: 'chrome'
     },
-    device: 'Server AWS',
     platform: {
       name: 'Windows',
       version: '11',
@@ -20,8 +18,7 @@ report.generate({
   customData: {
     title: 'Test Info',
     data: [
-      { label: 'Regression', value: 'Dev' },
-      { label: 'Date', value: '08/08/2024' },
+      { label: 'Regression' }
     ],
   },
 });
