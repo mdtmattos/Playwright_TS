@@ -3,8 +3,8 @@ Playwright automation project with Cucumber and TypeScript
 
 ## Install
 Run command line on terminal to install all dependencies:
-npm install
-npx playwright install
+- npm install
+- npx playwright install
 
 ## Script to run tests and generate the report
 You can find the scripts on package.json file
