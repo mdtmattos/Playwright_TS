@@ -1,0 +1,46 @@
+{
+  "name": "playwright-cucumber-bdd-typescript",
+  "version": "1.0.0",
+  "description": "Playwright Automation Project with TypeScript",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "cross-env TEST_ENV=dev npm test",
+    "prod": "cross-env TEST_ENV=prod npm test",
+    "devTag": "cross-env TEST_ENV=dev cucumber-js test/*.feature",
+    "prodTag": "cross-env TEST_ENV=prod cucumber-js test/*.feature",
+    "test": "cucumber-js test",
+    "posttest": "npx ts-node src/helper/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt",
+    "prettier": "npx prettier --write .",
+    "lint:check": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "@types/puppeteer": "^7.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "fs-extra": "^11.2.0",
+    "jest-extended": "^4.0.2",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "prettier": "3.0.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "otpauth": "^9.3.1"
+  }
+}
