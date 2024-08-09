@@ -1,5 +1,6 @@
 ## Introduction
 Playwright automation project with Cucumber and TypeScript
+- Author: Murilo Mattos
 
 ## Install
 Run command line on terminal to install all dependencies:
